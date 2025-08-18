@@ -17,6 +17,7 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --breakpoint-sm: 480px;
+    --container-6xl: 72rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
@@ -172,43 +173,20 @@
   }
 }
 @layer utilities {
-  .table {
-    display: table;
+  .mx-auto {
+    margin-inline: auto;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .max-w-6xl {
+    max-width: var(--container-6xl);
   }
-  .resize {
-    resize: both;
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
   }
-  .font-sans {
-    font-family: var(--font-sans);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .sm\:text-red-900 {
-    @media (width >= 480px) {
-      color: var(--color-red-900);
-    }
-  }
-  .md\:text-green-300 {
-    @media (width >= 768px) {
-      color: var(--color-green-300);
-    }
-  }
-  .lg\:text-yellow-500 {
-    @media (width >= 976px) {
-      color: var(--color-yellow-500);
-    }
+  .text-center {
+    text-align: center;
   }
 }
 @layer base {
@@ -251,26 +229,20 @@
   padding: calc(var(--spacing) * 4);
   border-radius: var(--radius-lg);
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
       --tw-font-weight: initial;
+      --tw-border-style: solid;
     }
   }
 }
