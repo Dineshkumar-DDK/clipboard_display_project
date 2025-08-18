@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+
+@layer base {
+ /* // normal css */
+  h1{
+    font-size: 2rem;  
+  }
+
+  /* // avl tailwind classes */
+  h2{
+    @apply text-3xl font-bold text-red-800; 
+  }
+ 
+
+}
+
+@theme{
+    --breakpoint-sm:480px;
+    --breakpoint-md:768px;
+    --breakpoint-lg:976px;
+    --breakpoint-xl:1440px;
+    --color-StrongCyan:hsl(171,66%,44%);
+    --color-lightBlue:hsl(233,100%,69%);
+    --color-darkGrayishBlue:hsl(210,10%,33%);
+    --grayishBlue:hsl(201,11%,66%);
+    --font-sans: "Bai Jamjuree", sans-serif;
+}
+/* // boot strap like classes */
+@layer components {
+  .btn-primary {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700;
+  }
+
+} 
+
+.custom-classes {
+    @apply text-red-500 font-bold;
+    @apply text-3xl;
+    @apply border border-gray-300;
+    @apply p-4;
+    @apply rounded-lg;
+  }
+
+
