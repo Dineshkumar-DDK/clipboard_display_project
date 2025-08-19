@@ -31,7 +31,7 @@
 }
 
 .section-container {
-  @apply text-center mx-auto max-w-6xl;
+  @apply text-center mx-auto max-w-6xl px-10;
 }
 
 .button-container{
