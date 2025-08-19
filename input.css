@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-
 @layer base {
-
   /* // normal css */
   h1 {
     font-size: 2rem;
@@ -15,12 +13,11 @@
     /* background-color: black; */
   }
 
-  @media(max-width:576px) {
+  @media (max-width: 576px) {
     body {
       background-image: url("images/bg-header-mobile.png");
       /* background-color: black; */
     }
-
   }
 
   /* // avl tailwind classes */
@@ -28,7 +25,17 @@
     @apply text-3xl font-bold text-red-800;
   }
 
+  h3 {
+    @apply text-4xl md:text-5xl font-bold text-darkGrayishBlue mb-8;
+  }
+}
 
+.section-container {
+  @apply text-center mx-auto max-w-6xl;
+}
+
+.button-container{
+  @apply flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8 w-full text-xl text-white
 }
 
 @theme {
@@ -48,7 +55,6 @@
   .btn-primary {
     @apply bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700;
   }
-
 }
 
 .custom-classes {
