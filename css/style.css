@@ -231,6 +231,9 @@
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
@@ -424,6 +427,15 @@
   max-width: var(--container-6xl);
   padding-inline: calc(var(--spacing) * 10);
   text-align: center;
+}
+.section-content {
+  margin-inline: auto;
+  max-width: var(--container-3xl);
+  text-align: center;
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+  --tw-leading: calc(var(--spacing) * 9);
+  line-height: calc(var(--spacing) * 9);
 }
 .button-container {
   display: flex;

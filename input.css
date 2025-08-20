@@ -34,6 +34,10 @@
   @apply text-center mx-auto max-w-6xl px-10;
 }
 
+.section-content{
+  @apply max-w-3xl text-center text-xl text-grayishBlue mx-auto leading-9
+}
+
 .button-container{
   @apply flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8 w-full text-xl text-white
 }
