@@ -20,6 +20,20 @@
     }
   }
 
+
+
+@theme {
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+  --color-StrongCyan: hsl(171, 66%, 44%);
+  --color-lightBlue: hsl(233, 100%, 69%);
+  --color-darkGrayishBlue: hsl(210, 10%, 33%);
+  --grayishBlue: hsl(201, 11%, 66%);
+  --font-sans: "Bai Jamjuree", sans-serif;
+}
+
   /* // avl tailwind classes */
   h2 {
     @apply text-3xl font-bold text-red-800;
@@ -44,18 +58,6 @@
 
 .button-container {
   @apply flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8 w-full text-xl text-white;
-}
-
-@theme {
-  --breakpoint-sm: 480px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 976px;
-  --breakpoint-xl: 1440px;
-  --color-StrongCyan: hsl(171, 66%, 44%);
-  --color-lightBlue: hsl(233, 100%, 69%);
-  --color-darkGrayishBlue: hsl(210, 10%, 33%);
-  --grayishBlue: hsl(201, 11%, 66%);
-  --font-sans: "Bai Jamjuree", sans-serif;
 }
 
 /* // boot strap like classes */
